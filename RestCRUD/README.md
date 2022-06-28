@@ -1,5 +1,7 @@
 # RestCRUD Project
-This project includes basic CRUD operations using H2 db with quarkus
+This project includes basic CRUD operations using H2 db with quarkus,
+ it contains import.sql script to preload db with data(you can skip that if not required)
+
 
 # Adding Extensions to projec
 For CRUD operations we will need following extensions to be added, you can execute following line in terminal to add extensions
