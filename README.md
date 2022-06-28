@@ -10,5 +10,4 @@ Java Version : JDK11 or above
 
 GRAALVM : https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-21.1.0/graalvm-ce-java11-darwin-amd64-21.1.0.tar.gz
 
-Build and Run the Quarkus Application:
 
