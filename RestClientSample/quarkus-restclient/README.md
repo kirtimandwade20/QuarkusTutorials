@@ -1,7 +1,14 @@
 # quarkus-restclient Project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
-This contains sample for invoking Third Party Rest API Using Quarkus
+1) This contains sample for invoking Third Party Rest API Using Quarkus
+    Check thte FruityViceService for the implementation, also we need to add the api-url in application.properties.
+
+ 2) Fault Tolerance
+  Fault tolerance implemented using Circuitbreaker and Fault tolerance annotations provided by quarkus
+
+ 3) HealthCheck
+    Health check is implemented for checking healthcheck of resources and the 3rd party API's.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
@@ -58,4 +65,40 @@ http://localhost:8080/fruit?season=Summer
 Response:
 ```
 [{"calories":96.0,"carbohydrates":22.0,"name":"Banana","season":"Summer"},{"calories":52.0,"carbohydrates":11.4,"name":"Apple","season":"Summer"}]
+```
+
+HealthCheck
+You can check health metrics using 
+```
+http://localhost:8080/q/health-ui/
+```
+Getting all health metrics
+
+``` 
+http://localhost:8080/health 
+```
+
+Response
+
+```
+{
+    "status": "UP",
+    "checks": [
+        {
+            "name": "I'm alive",
+            "status": "UP"
+        },
+        {
+            "name": "Database connections health check",
+            "status": "UP"
+        },
+        {
+            "name": "ExternalURL health check",
+            "status": "UP",
+            "data": {
+                "host": "GET https://www.fruityvice.com/api/fruit/banana"
+            }
+        }
+    ]
+}
 ```
