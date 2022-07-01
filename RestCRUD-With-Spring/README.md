@@ -1,9 +1,9 @@
-# RestCRUD with Spring Project
+# Rest CRUD with Spring Project
 This project includes basic CRUD operations using H2 db using Spring Controller and repository integrated with quarkus,
 it contains import.sql script to preload db with data(you can skip that if not required)
 
 
-# Adding Extensions to projec
+# Adding Extensions to project
 For CRUD operations we will need following extensions to be added, you can execute following line in terminal to add extensions
 
 ```mvn quarkus:add-extension -Dextensions=quarkus-spring-web,quarkus-spring-data-jpa,quarkus-resteasy-jackson```

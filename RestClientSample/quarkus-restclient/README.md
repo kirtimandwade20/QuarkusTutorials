@@ -49,7 +49,9 @@ You can create a native executable using:
 ## Testing
 
 Post Request
-``` curl -d '{"name": "Banana", "season": "Summer"}' -H "Content-Type: application/json" http://localhost:8080/fruit ```
+``` 
+curl -d '{"name": "Banana", "season": "Summer"}' -H "Content-Type: application/json" http://localhost:8080/fruit 
+```
 
 Response
 
@@ -102,3 +104,4 @@ Response
     ]
 }
 ```
+

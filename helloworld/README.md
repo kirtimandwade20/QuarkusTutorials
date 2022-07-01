@@ -1,4 +1,4 @@
-# helloworld Project
+# Helloworld Project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
@@ -45,12 +45,7 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 
 You can then execute your native executable with: `./target/helloworld-1.0-SNAPSHOT-runner`
 
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.
+## Testing via CLI
+```curl localhost:8080/hello```
+```hello```
 
-## Provided Code
-
-### RESTEasy Reactive
-
-Easily start your Reactive RESTful Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
